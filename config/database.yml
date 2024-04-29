@@ -24,3 +24,7 @@ development:
 production:
   <<: *default
   database: coolify_production
+  username: <%= ENV['COOLIFY_DATABASE_USERNAME'] %>
+  password: <%= ENV['COOLIFY_DATABASE_PASSWORD'] %>
+  host: <%= ENV['COOLIFY_DATABASE_HOST'] %>
+
